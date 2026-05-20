@@ -1,12 +1,12 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<title>Lucas Walter | AI Automation & AI Agent Builder</title>
+	<link rel="icon" href="/lucas_walter_profile.png" />
 </svelte:head>
 
 {@render children()}
