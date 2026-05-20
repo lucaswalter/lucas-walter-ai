@@ -305,17 +305,21 @@
 		justify-content: center;
 		height: 44px;
 		color: var(--color-charcoal-black);
-		border: 0.5px solid var(--color-light-concrete);
 		border-radius: var(--radius-default);
+		/* Hairline as a box-shadow ring, not a border: flex:1 + gap puts tile
+		   edges on fractional pixels, where a 0.5px border can device-snap
+		   unevenly and drop one side (the LinkedIn-tile right-edge clip). A
+		   shadow ring rasterises all four sides uniformly, so it can't. */
+		box-shadow: var(--shadow-hairline);
 		transition:
 			color 0.25s var(--ease-out-quint),
-			border-color 0.25s var(--ease-out-quint),
+			box-shadow 0.25s var(--ease-out-quint),
 			background 0.25s var(--ease-out-quint),
 			transform 0.25s var(--ease-out-quint);
 	}
 	.social:hover {
 		color: var(--color-sky-blueprint);
-		border-color: var(--color-sky-blueprint);
+		box-shadow: 0 0 0 0.5px var(--color-sky-blueprint);
 		background: var(--color-paper);
 		transform: translateY(-1px);
 	}
