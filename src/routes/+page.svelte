@@ -368,6 +368,7 @@
 		border: 0.5px solid var(--color-light-concrete);
 		color: var(--color-charcoal-black);
 		background: var(--color-cloud-white);
+		-webkit-tap-highlight-color: transparent;
 		transition:
 			background 0.25s var(--ease-out-quint),
 			border-color 0.25s var(--ease-out-quint),
@@ -472,6 +473,38 @@
 	}
 	.video:hover .src {
 		color: var(--color-sky-blueprint);
+	}
+
+	/* On phones the side-by-side row squeezes the text into a narrow column and
+	   leaves the vertically-centred CTA floating in dead space. Stack instead:
+	   text reclaims full width, each CTA becomes a full-width action bar. */
+	@media (max-width: 30rem) {
+		.row {
+			flex-direction: column;
+			align-items: stretch;
+			gap: 0.875rem;
+			padding: 1.125rem 0.875rem 1.25rem;
+		}
+		.row-text {
+			gap: 5px;
+		}
+		.row-desc {
+			max-width: 46ch;
+		}
+		.cta {
+			width: 100%;
+			min-height: 44px;
+			justify-content: space-between;
+			padding: 11px 15px;
+			font-size: 0.875rem;
+		}
+		/* Secondary actions read as outline buttons so they're unmistakably tappable. */
+		.row:not(.primary) .cta {
+			border-color: var(--color-charcoal-black);
+		}
+		.cta:active {
+			transform: scale(0.99);
+		}
 	}
 
 	@media (max-width: 24rem) {
