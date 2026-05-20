@@ -10,7 +10,8 @@ Source-of-truth for the copy and links on the main linktree landing page. Edit h
 ## Profile
 
 - **Name:** Lucas Walter
-- **Bio:** Hi 👋 I'm Lucas. I build AI agents & n8n automations that run real businesses, and teach you to do the same.
+- **Bio (paragraph 1):** Hi 👋 I'm Lucas. I build AI agents & n8n automations that run real businesses, including CoinLedger (800k users), Klint AI, and Spokane Pulse.
+- **Bio (paragraph 2):** Follow along on socials, join 28k+ builders in my free community, or grab the courses below.
 - **Avatar:** `/lucas_walter_profile.png`
 
 ## Social links
@@ -25,13 +26,18 @@ Source-of-truth for the copy and links on the main linktree landing page. Edit h
 
 ## Links
 
-### 1. Snag My AI Automations
-- **Description:** Download all of my n8n automations + AI Agent builds for free.
+### 1. The 6-Figure AI Side Biz 📈 (primary)
+- **Description:** Build a local newsletter business powered by AI agents that runs itself.
+- **CTA:** Start building
+- **URL:** https://www.skool.com/ai-automation-mastery-group/classroom/618956da?md=b20fc0f3d1984362a75ead635e4f0c96
+
+### 2. Snag My AI Automations
+- **Description:** Download all of my n8n automations + AI agent builds for free.
 - **CTA:** Get them for free
 - **URL:** https://www.skool.com/ai-automation-mastery-group
 
-### 2. Join My Community (AI Automation Mastery)
-- **Description:** Learn how to build, scale, and sell AI Agents + automations.
+### 3. Join My Community (AI Automation Mastery)
+- **Description:** Learn how to build, scale, and sell AI agents + automations.
 - **CTA:** Join for free
 - **URL:** https://www.skool.com/ai-automation-mastery-group/
 

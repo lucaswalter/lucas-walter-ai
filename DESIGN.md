@@ -1,218 +1,184 @@
-# Buymeacoffee — Style Reference
-> Warm, buoyant community canvas
+# Parallel Web Systems — Style Reference
+
+> Architectural Blueprint; Grid-based precision with sparse, functional color accents.
 
 **Theme:** light
 
-Buy Me a Coffee embraces a friendly, tactile visual system that feels like a vibrant community space. Light, rounded cards with soft shadows float on a subtle off-white canvas, inviting interaction. A playful, energetic yellow serves as the primary brand accent, injecting warmth and positivity into calls to action and highlighted elements. Typography is clean and approachable, maintaining high readability with ample contrast, while bold headlines declare the brand's purpose with confidence but not aggression. The overall impression is one of supportive ease, much like a casual coffee shop interaction made digital.
+This design system presents as a highly structured, data-driven interface, echoing the precision required in AI systems. Its palette is almost entirely achromatic, with a deliberate and minimal use of vivid orange and moderate blue to highlight interactive elements and key information. The signature move is the pairing of a classic humanist sans-serif with a mono-spaced font, creating an aesthetic that feels both approachable and technically rigorous. Underlying the visual clarity are subtle shadows and crisp borders, conveying a sense of engineered robustness.
 
 ## Tokens — Colors
 
-| Name | Value | Token | Role |
-|------|-------|-------|------|
-| Canvas | `#e5e7eb` | `--color-canvas` | Page backgrounds, subtle borders, dividers — a soft, almost imperceptible foundation |
-| Surface | `#ffffff` | `--color-surface` | Card backgrounds, modal surfaces, primary content containers, button backgrounds for ghost or secondary actions |
-| Deep Graphite | `#222222` | `--color-deep-graphite` | Primary text for headings and body content, offering strong contrast against light surfaces |
-| Text Accent | `#717171` | `--color-text-accent` | Subtler text, secondary information, muted headings, and helper text |
-| Rich Black | `#000000` | `--color-rich-black` | Highest contrast text, icons, and occasionally card backgrounds where absolute clarity is paramount |
-| Goldenrod | `#ffdd00` | `--color-goldenrod` | Yellow wash for highlight backgrounds, decorative bands, and soft emphasis behind content. Do not promote it to the primary CTA color |
-| Amber Glow | `#f7d046` | `--color-amber-glow` | Secondary brand accent, often seen on cards or subtly active background states |
-| Sunset Coral | `#d8573f` | `--color-sunset-coral` | Orange outline accent for tags, dividers, and focused UI edges. Use as a supporting accent, not as a status color |
-| Blush Tone | `#f5d5cf` | `--color-blush-tone` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Name           | Value     | Token                    | Role                                                                                                                                              |
+| -------------- | --------- | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cloud White    | `#ffffff` | `--color-cloud-white`    | Page backgrounds, card surfaces, active states for subtle contrast.                                                                               |
+| Smoke Gray     | `#f6f6f6` | `--color-smoke-gray`     | Subtle background sections, hover states on neutral elements.                                                                                     |
+| Whisper Gray   | `#eeeeee` | `--color-whisper-gray`   | Alternate background for subtle section breaks.                                                                                                   |
+| Light Concrete | `#e5e5e5` | `--color-light-concrete` | Borders, dividers, and subtle outlines on UI elements.                                                                                            |
+| Medium Ash     | `#858483` | `--color-medium-ash`     | Secondary text, descriptive labels, and subtle icons – providing visual hierarchy without stark contrast.                                         |
+| Charcoal Black | `#181818` | `--color-charcoal-black` | Primary text, headlines, and key UI elements for clear readability.                                                                               |
+| Obsidian       | `#000000` | `--color-obsidian`       | Critical text, strong accents, and high-contrast iconography, especially for logos.                                                               |
+| Ignite Orange  | `#fb631b` | `--color-ignite-orange`  | Primary call-to-action buttons, active navigation indicators, specific highlight text – a vivid mark against the neutral palette to drive action. |
+| Sky Blueprint  | `#0d6ea5` | `--color-sky-blueprint`  | Secondary interactive elements, links, and system indicators – a cooler complement to the primary orange, maintaining a professional tone.        |
+| Ocean Tint     | `#6fa2e8` | `--color-ocean-tint`     | Used for background coloration in specific sections, creating a subtle visual break.                                                              |
+| Sea Mist       | `#8fb6cc` | `--color-sea-mist`       | Subtle background shading or very light accents.                                                                                                  |
+| Success Green  | `#69be78` | `--color-success-green`  | Semantic success indicators and notification backgrounds.                                                                                         |
 
 ## Tokens — Typography
 
-### ui-sans-serif — ui-sans-serif — detected in extracted data but not described by AI · `--font-ui-sans-serif`
-- **Weights:** 400
-- **Sizes:** 16px
-- **Line height:** 1.5
-- **Role:** ui-sans-serif — detected in extracted data but not described by AI
+### gerstnerProgramm — Primary text font for body copy, navigational elements, and most headers. Its slightly humanist curves temper the overall technical aesthetic, making information digestible. · `--font-gerstnerprogramm`
 
-### Circular — Body text and general interface elements. The 400 weight is a confident, readable baseline. · `--font-circular`
-- **Substitute:** system-ui, sans-serif
-- **Weights:** 400
-- **Sizes:** 10px, 12px, 14px, 16px, 18px, 22px, 24px, 40px
-- **Line height:** 1.20, 1.33, 1.50, 1.67
-- **Letter spacing:** -0.42px at 10px, -0.47px at 14px, -0.56px at 16px, -0.68px at 24px
-- **Role:** Body text and general interface elements. The 400 weight is a confident, readable baseline.
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 11px, 13px, 14px, 16px, 26px, 36px
+- **Line height:** 1.11, 1.23, 1.50
+- **Letter spacing:** 0.16, 0.14
+- **Role:** Primary text font for body copy, navigational elements, and most headers. Its slightly humanist curves temper the overall technical aesthetic, making information digestible.
 
-### Circular — Headlines and prominent text. The interplay of 64px and 96px with distinct letter-spacing creates gravitas without shouting. · `--font-circular`
-- **Substitute:** system-ui, sans-serif
-- **Weights:** 500
-- **Sizes:** 14px, 16px, 20px, 24px, 64px, 96px
-- **Line height:** 0.99, 1.00, 1.17, 1.20, 1.25, 1.50
-- **Letter spacing:** 0.19px at 14px, -0.6px at 24px, -1.6px at 64px, -2.4px at 96px
-- **Role:** Headlines and prominent text. The interplay of 64px and 96px with distinct letter-spacing creates gravitas without shouting.
+### ftSystemMono — Used for code snippets, data readouts, and UI elements like 'Human/Machine' toggles. The monospace nature reinforces the technical and data-driven identity of the platform. · `--font-ftsystemmono`
 
-### Circular — Emphasized components, strong callouts, and occasionally bold headlines for high-impact statements. · `--font-circular`
-- **Substitute:** system-ui, sans-serif
-- **Weights:** 700
-- **Sizes:** 14px, 16px, 20px, 24px, 64px, 96px
-- **Line height:** 0.99, 1.00, 1.17, 1.20, 1.25, 1.50
-- **Letter spacing:** 0.19px at 14px, -0.62px at 24px, -1.6px at 64px, -2.4px at 96px
-- **Role:** Emphasized components, strong callouts, and occasionally bold headlines for high-impact statements.
-
-### Circular — Powerful, condensed statements or short, impactful headlines. Rarely used, but effective when needed. · `--font-circular`
-- **Substitute:** system-ui, sans-serif
-- **Weights:** 900
-- **Sizes:** 10px, 12px, 14px, 16px, 18px, 22px, 24px, 40px
-- **Line height:** 1.20, 1.33, 1.50, 1.67
-- **Letter spacing:** -0.42px at 10px, -0.47px at 14px, -0.56px at 16px, -0.68px at 24px
-- **Role:** Powerful, condensed statements or short, impactful headlines. Rarely used, but effective when needed.
+- **Substitute:** Roboto Mono
+- **Weights:** 400, 500
+- **Sizes:** 10px, 11px, 12px, 13px, 14px, 16px
+- **Line height:** 1.00, 1.23, 1.33, 1.50
+- **Letter spacing:** 0.18, 0.24, 0.21
+- **Role:** Used for code snippets, data readouts, and UI elements like 'Human/Machine' toggles. The monospace nature reinforces the technical and data-driven identity of the platform.
 
 ### Type Scale
 
-| Role | Size | Line Height | Letter Spacing | Token |
-|------|------|-------------|----------------|-------|
-| caption | 10px | 1.5 | -0.42px | `--text-caption` |
-| body | 14px | 1.5 | -0.47px | `--text-body` |
-| heading-sm | 22px | 1.2 | -0.68px | `--text-heading-sm` |
-| heading | 24px | 1.2 | -0.62px | `--text-heading` |
-| heading-lg | 40px | 1.2 | -1.24px | `--text-heading-lg` |
-| display | 64px | 1 | -1.6px | `--text-display` |
+| Role       | Size | Line Height | Letter Spacing | Token               |
+| ---------- | ---- | ----------- | -------------- | ------------------- |
+| caption    | 10px | 1           | —              | `--text-caption`    |
+| heading-lg | 26px | 1.11        | 0.26px         | `--text-heading-lg` |
+| display    | 36px | 1.11        | 0.36px         | `--text-display`    |
 
 ## Tokens — Spacing & Shapes
 
-**Base unit:** 4px
+**Base unit:** 8px
 
-**Density:** comfortable
+**Density:** compact
 
 ### Spacing Scale
 
-| Name | Value | Token |
-|------|-------|-------|
-| 4 | 4px | `--spacing-4` |
-| 8 | 8px | `--spacing-8` |
-| 12 | 12px | `--spacing-12` |
-| 16 | 16px | `--spacing-16` |
-| 20 | 20px | `--spacing-20` |
-| 24 | 24px | `--spacing-24` |
-| 28 | 28px | `--spacing-28` |
-| 32 | 32px | `--spacing-32` |
-| 48 | 48px | `--spacing-48` |
-| 64 | 64px | `--spacing-64` |
-| 96 | 96px | `--spacing-96` |
-| 120 | 120px | `--spacing-120` |
+| Name | Value | Token           |
+| ---- | ----- | --------------- |
+| 8    | 8px   | `--spacing-8`   |
+| 16   | 16px  | `--spacing-16`  |
+| 24   | 24px  | `--spacing-24`  |
+| 48   | 48px  | `--spacing-48`  |
+| 80   | 80px  | `--spacing-80`  |
+| 160  | 160px | `--spacing-160` |
 
 ### Border Radius
 
-| Element | Value |
-|---------|-------|
-| cards | 24px |
-| links | 16px |
-| images | 8px |
-| inputs | 8px |
-| buttons | 9999px |
+| Element    | Value |
+| ---------- | ----- |
+| buttons    | 4px   |
+| default    | 2px   |
+| card_large | 8px   |
+| card_small | 4px   |
 
 ### Shadows
 
-| Name | Value | Token |
-|------|-------|-------|
-| subtle | `rgba(0, 0, 0, 0.15) 0px 0px 2px 0px, rgba(0, 0, 0, 0.04) ...` | `--shadow-subtle` |
+| Name     | Value                                                          | Token               |
+| -------- | -------------------------------------------------------------- | ------------------- |
+| subtle   | `rgb(229, 229, 229) 0px 0px 0px 0.5px`                         | `--shadow-subtle`   |
+| subtle-2 | `rgb(229, 229, 229) 0px 0.5px 0px 0px`                         | `--shadow-subtle-2` |
+| sm       | `rgba(0, 0, 0, 0.02) 0px 13px 8px 0px, rgba(0, 0, 0, 0.03)...` | `--shadow-sm`       |
 
 ### Layout
 
-- **Page max-width:** 1200px
-- **Section gap:** 24px
-- **Card padding:** 16px
-- **Element gap:** 16px
+- **Page max-width:** 1600px
+- **Section gap:** 80px
+- **Card padding:** 8px
+- **Element gap:** 8px
 
 ## Components
 
-### Support Card
-**Role:** Informational display for creators, featuring a soft shadow and rounded corners.
+### Secondary Ghost Button
 
-Background: #ffffff, border-radius: 24px, box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 1.955px 0px, rgba(0, 0, 0, 0.04) 0px 7.821px 39.106px 0px, rgba(0, 0, 0, 0.05) 0px 1.955px 4.888px 0px, padding: 16px.
+**Role:** Interactive element
 
-### Pill-shaped Creator Card
-**Role:** Compact display for creators, often used in lists or carousels, with a strong pill-like radius.
+Subtle interactive button, uses brand blue for text. `backgroundColor: rgba(0, 0, 0, 0)`, `color: #0d6ea5`, `borderRadius: 0px`, `padding: 8px 8px`, `borderTopColor: #e5e5e5`.
 
-Background: #ffffff, border-radius: 9999px, box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 3.859px 0px, rgba(0, 0, 0, 0.04) 0px 15.438px 77.189px 0px, rgba(0, 0, 0, 0.05) 0px 3.859px 9.649px 0px, padding: 0px.
+### Neutral Button
 
-### Marketing Feature Card
-**Role:** Large, inviting card for presenting key features or sections, generous padding and soft radius.
+**Role:** Interactive element
 
-Background: #ffffff, border-radius: 40px, box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 2.794px 0px, rgba(0, 0, 0, 0.04) 0px 11.174px 55.871px 0px, rgba(0, 0, 0, 0.05) 0px 2.794px 6.984px 0px, padding: 32px.
+General purpose button with a light background. `backgroundColor: #ffffff`, `color: #181818`, `borderRadius: 4px`, `padding: 8px 16px`, `borderTopColor: #e5e5e5`.
 
-### Interactive Item Card
-**Role:** Smaller card for interactive elements like input fields or message bubbles, with a subtle semantic background and no shadow.
+### Navigation Button
 
-Background: rgba(216, 87, 63, 0.05), border-radius: 8px, box-shadow: none, padding: 0px.
+**Role:** Interactive element
 
-### Call-to-Action Button
-**Role:** Primary action button, bright and inviting, commanding attention with its distinct color and rounded shape.
+Slightly more rounded neutral button for navigation. `backgroundColor: #ffffff`, `color: #181818`, `borderRadius: 8px`, `padding: 8px 12px`, `borderTopColor: #e5e5e5`.
 
-Background: #ffdd00, text color: #000000, border-radius: 9999px, minimal padding; text: Circular Book, font-size: 16px, line-height 1.5, letter-spacing normal.
+### Elevated Information Card
 
-### Semantic Action Button
-**Role:** Action button used for support-related interactions, with a warm, desaturated red hue.
+**Role:** Information container
 
-Background: #d8573f, text color: #ffffff, border-radius: 9999px, type: Circular Medium, 16px, letter-spacing -0.34px.
+Displays content with a subtle shadow for elevation. `backgroundColor: #ffffff`, `borderRadius: 4px`, `boxShadow: rgba(0, 0, 0, 0.02) 0px 13px 8px 0px, rgba(0, 0, 0, 0.03) 0px 6px 6px 0px, rgba(0, 0, 0, 0.04) 0px 1px 3px 0px`, `padding: 8px`.
 
-### Header Navigation Link
-**Role:** Standard top navigation link for general information.
+### Ghost Content Card
 
-Text color: #222222, font: Circular Book, 16px, line-height 1.5, letter-spacing normal, no background, minimal padding.
+**Role:** Information container
+
+Transparent content card with no borders or shadows. `backgroundColor: rgba(0, 0, 0, 0)`, `borderRadius: 0px`, `boxShadow: none`, `padding: 0px`.
 
 ## Do's and Don'ts
 
 ### Do
-- Prioritize Canvas (#e5e7eb) for main page backgrounds and Surface (#ffffff) for card and container backgrounds.
-- Use Goldenrod (#ffdd00) for all primary calls to action backgrounds to maintain brand recognition and visual hierarchy.
-- Apply a 9999px border-radius to all buttons and small interactive elements to achieve a friendly, pill-like appearance.
-- Utilize the subtle shadow style `rgba(0, 0, 0, 0.15) 0px 0px 2px 0px, rgba(0, 0, 0, 0.04) 0px 8px 40px 0px, rgba(0, 0, 0, 0.05) 0px 2px 5px 0px` for cards to give a comfortable lift without heaviness.
-- Employ Deep Graphite (#222222) and Rich Black (#000000) for headlines and body text to ensure high contrast and readability on light surfaces.
-- Maintain a clear vertical rhythm using 24px as the section gap and 16px as the element gap where applicable.
-- Use 'Circular' font family for all text elements; prefer weights 400 and 500 for body and medium headlines, and bolder weights for impactful titles with specified negative letter-spacing.
+
+- Prioritize `Charcoal Black (#181818)` for all primary headings and body text, ensuring high readability against light backgrounds.
+- Use `Ignite Orange (#fb631b)` exclusively for primary calls-to-action to maximize visual impact and direct user attention.
+- Apply `Light Concrete (#e5e5e5)` for all non-functional borders and dividers to maintain a discreet, structured appearance.
+- Maintain `8px` as the base unit for all spacing, including `cardPadding`, `elementGap`, and `sectionGap` multiples, to ensure rhythm and consistency.
+- Employ the `ftSystemMono` font for all technical data, code snippets, and UI toggles like 'Human/Machine' to reinforce the platform's technical nature.
+- Utilize `borderRadius: 4px` for primary buttons and elevated cards, and `borderRadius: 2px` for smaller controls and elements for a consistent, subtle softening of edges.
 
 ### Don't
-- Do not introduce strong, saturated background colors outside of brand or semantic accents.
-- Avoid using sharp corners or radii smaller than 8px for cards or primary interactive elements.
-- Do not deviate from the 'Circular' typeface for any text; do not substitute with system fonts unless explicitly specified for a fallback.
-- Refrain from using complex, multi-color gradients; stick to solid color accents or very subtle background tints.
-- Do not apply heavy or dark shadows; the subtle, light shadow style is integral to the brand's friendly feel.
-- Do not use #e5e7eb as a primary text color against #ffffff or similar light backgrounds; it's reserved for background and subtle borders.
-- Avoid using any other yellow shades for primary CTAs; Goldenrod (#ffdd00) is specific to this role.
 
-## Surfaces
-
-| Level | Name | Value | Purpose |
-|-------|------|-------|---------|
-| 1 | Canvas Base | `#e5e7eb` | The foundational background for the entire page, providing a slight off-white anchor. |
-| 2 | Primary Surface | `#ffffff` | Used for content cards, modals, and interactive elements, allowing text and UI to stand out clearly. |
+- Do not introduce new saturated colors outside of `Ignite Orange (#fb631b)` and `Sky Blueprint (#0d6ea5)` to preserve the system's focused chromatic palette.
+- Avoid large, soft shadows; stick to the specified subtle box-shadows `rgba(0, 0, 0, 0.02) 0px 13px 8px 0px` for elevation, or thin borders for definition.
+- Do not deviate from the `gerstnerProgramm` and `ftSystemMono` font families, as their interplay is central to the brand's identity.
+- Refrain from using `Sky Blueprint (#0d6ea5)` for primary calls-to-action; its role is for secondary interactive elements and links.
+- Do not use `borderRadius: 0px` on interactive elements unless it is specifically a `Ghost Button` or part of a component designed for a stark, flat look.
+- Avoid dense sections of text; use `Medium Ash (#858483)` for secondary content and ensure adequate line-heights (e.g., 1.5 for body text) to maintain readability within the compact density.
 
 ## Elevation
 
-- **Card:** `rgba(0, 0, 0, 0.15) 0px 0px 1.955px 0px, rgba(0, 0, 0, 0.04) 0px 7.821px 39.106px 0px, rgba(0, 0, 0, 0.05) 0px 1.955px 4.888px 0px`
+- **Elevated Information Card:** `rgba(0, 0, 0, 0.02) 0px 13px 8px 0px, rgba(0, 0, 0, 0.03) 0px 6px 6px 0px, rgba(0, 0, 0, 0.04) 0px 1px 3px 0px`
 
 ## Imagery
 
-The visual language features contained, white-background rectangles that simulate floating cards. These often house product screenshots or user-generated content, giving a glimpse into the platform's functionality and community. Avatar images are circular, reinforcing the soft, friendly aesthetic. Icons are primarily filled, using the brand's accent colors or dark neutrals, and have a moderate stroke weight if outlined, acting as small functional markers. Imagery primarily serves to illustrate real-world application and social proof, with a moderate density.
+This design primarily uses abstract graphics and iconography. The hero section features an animated code-like graphic of small randomized characters on a blue background, conveying a sense of data processing and complex systems. Brand logos are flat, monochrome where possible, and minimally treated, serving a functional rather than decorative role. Photography is absent; visuals are either abstract representations of data/code or clean UI elements. Density is moderate, with images/graphics serving as section dividers or thematic accents rather than illustrative content.
 
 ## Layout
 
-The page uses a maximum width of 1200px, creating a contained, centered experience. The hero section features a prominent, centered headline over a white background, flanked by floating 'creator card' elements that break the grid subtly, suggesting a dynamic, community-driven platform. Content sections generally follow a vertical stacking pattern, with consistent vertical spacing. Text-heavy blocks alternate with visual elements like embedded screenshots within slightly elevated cards, creating a readable and inviting flow without complex grid structures.
+The page adheres to a max-width of `1600px`, centrally aligned, creating a contained and structured feel. The hero section is a full-width blue banner containing animated, code-like graphics, with a centered headline stack. Content sections typically alternate between a background of `Cloud White` and a subtle `Whisper Gray`, providing a clear visual rhythm. Information is presented in organized blocks, often with left-aligned text and accompanying elements, or in distinct feature grids. Dense content blocks are offset by generous vertical spacing of `80px` between sections. The navigation is a fixed top bar, housing utilitarian links and distinctly colored CTA buttons.
 
 ## Agent Prompt Guide
 
-Quick Color Reference:
-text: #222222
-background: #e5e7eb
-border: #e5e7eb
-accent: #ffdd00
-primary action: no distinct CTA color
+### Quick Color Reference
 
-Example Component Prompts:
-No distinct primary action color was observed; use the extracted neutral button treatments instead of inventing a filled CTA color.
-2. Design a creator support card: background Surface (#ffffff), border-radius 24px, apply the light card shadow, with primary text Deep Graphite (#222222) using Circular 400 at 16px, and secondary text Text Accent (#717171) Circular 400 at 14px.
-3. Build a 'Support $3' button: background Sunset Coral (#d8573f), text Surface (#ffffff), border-radius 9999px, text 'Support $3' in Circular 500 weight, 16px size.
-4. Construct a section heading: text Deep Graphite (#222222), font Circular 500 weight, 64px size, letter-spacing -1.6px, text 'Fund your creative work'. 
+- Text: `#181818` (Charcoal Black)
+- Background: `#ffffff` (Cloud White)
+- CTA Button: `#fb631b` (Ignite Orange)
+- Border: `#e5e5e5` (Light Concrete)
+- Link/Secondary Accent: `#0d6ea5` (Sky Blueprint)
+
+### Example Component Prompts
+
+1. **Create a hero section:** Full-width `Ocean Tint (#6fa2e8)` background with `ftSystemMono` characters on it. Centered headline 'AIs are the web's new user' (gerstnerProgramm, weight 500, 36px, #181818). Below it, a sub-headline 'The highest accuracy web search for your AI' (gerstnerProgramm, weight 400, 26px, #181818, 'for your AI' in #fb631b). Below that, a Neutral Button: 'Start building P' (`backgroundColor: #ffffff`, `color: #181818`, `borderRadius: 4px`, `padding: 8px 16px`, `borderTopColor: #e5e5e5`).
+2. **Generate an Elevated Information Card:** `backgroundColor: #ffffff`, `borderRadius: 4px`, `boxShadow: rgba(0, 0, 0, 0.02) 0px 13px 8px 0px, rgba(0, 0, 0, 0.03) 0px 6px 6px 0px, rgba(0, 0, 0, 0.04) 0px 1px 3px 0px`, `padding: 8px`. Inside, a heading 'Highest accuracy' (gerstnerProgramm, weight 500, 16px, #181818) and body text 'Production-ready outputs built on cross-referenced facts...' (gerstnerProgramm, weight 400, 13px, #858483).
+3. **Design a Human/Machine Toggle:** Two `ftSystemMono` text labels, 'Human' and 'Machine' (weight 400, 13px, `letterSpacing: 0.195px`). When 'Human' is active, its `backgroundColor: #181818` and `color: #ffffff`. 'Machine' is then `backgroundColor: rgba(0, 0, 0, 0)` and `color: #858483`. The entire component has `borderRadius: 2px` on its segmented ends.
+4. **Create a Top Banner Notification:** `backgroundColor: #f5f4f1`. Text 'We've raised $100M to build infrastructure for the web's second user.' with font `gerstnerProgramm`, weight 400, 13px, color `#181818`. An inline link 'Read more' within the text, using `color: #0d6ea5` and no underline.
 
 ## Similar Brands
 
-- **Patreon** — Creator-first platform with a focus on community and support, similar friendly and approachable UI.
-- **Gumroad** — Empowers creators to sell digital products, sharing a similar focus on individual creator economic empowerment and clean aesthetics.
-- **Stripe** — Clean, understated UI with functional accent colors on a largely monochromatic canvas, emphasizing clarity and efficiency.
-- **Ghost** — Platform for independent publishers, featuring a clean, readable design with a focus on content creation and community.
+- **Vercel** — Similar focus on minimalist, high-contrast UI with strategic use of a single accent color (orange/blue) against a largely achromatic palette, often featuring technical fonts.
+- **Stripe** — Employs a clean, grid-based layout with subtle shadows and borders for information hierarchy. Typography is precise and functional, often mixing sans-serif with monospace elements.
+- **Linear** — High information density within a structured, minimalist interface. Strong emphasis on legibility through clear typography and distinct interactive states using a limited color palette.
+- **PlanetScale** — Dev-tool aesthetics with a strong emphasis on data, using technical visual elements and a restrained color palette to convey authority and precision.
 
 ## Quick Start
 
@@ -220,94 +186,73 @@ No distinct primary action color was observed; use the extracted neutral button 
 
 ```css
 :root {
-  /* Colors */
-  --color-canvas: #e5e7eb;
-  --color-surface: #ffffff;
-  --color-deep-graphite: #222222;
-  --color-text-accent: #717171;
-  --color-rich-black: #000000;
-  --color-goldenrod: #ffdd00;
-  --color-amber-glow: #f7d046;
-  --color-sunset-coral: #d8573f;
-  --color-blush-tone: #f5d5cf;
+	/* Colors */
+	--color-cloud-white: #ffffff;
+	--color-smoke-gray: #f6f6f6;
+	--color-whisper-gray: #eeeeee;
+	--color-light-concrete: #e5e5e5;
+	--color-medium-ash: #858483;
+	--color-charcoal-black: #181818;
+	--color-obsidian: #000000;
+	--color-ignite-orange: #fb631b;
+	--color-sky-blueprint: #0d6ea5;
+	--color-ocean-tint: #6fa2e8;
+	--color-sea-mist: #8fb6cc;
+	--color-success-green: #69be78;
 
-  /* Typography — Font Families */
-  --font-ui-sans-serif: 'ui-sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-circular: 'Circular', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	/* Typography — Font Families */
+	--font-gerstnerprogramm:
+		'gerstnerProgramm', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, sans-serif;
+	--font-ftsystemmono:
+		'ftSystemMono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  /* Typography — Scale */
-  --text-caption: 10px;
-  --leading-caption: 1.5;
-  --tracking-caption: -0.42px;
-  --text-body: 14px;
-  --leading-body: 1.5;
-  --tracking-body: -0.47px;
-  --text-heading-sm: 22px;
-  --leading-heading-sm: 1.2;
-  --tracking-heading-sm: -0.68px;
-  --text-heading: 24px;
-  --leading-heading: 1.2;
-  --tracking-heading: -0.62px;
-  --text-heading-lg: 40px;
-  --leading-heading-lg: 1.2;
-  --tracking-heading-lg: -1.24px;
-  --text-display: 64px;
-  --leading-display: 1;
-  --tracking-display: -1.6px;
+	/* Typography — Scale */
+	--text-caption: 10px;
+	--leading-caption: 1;
+	--text-heading-lg: 26px;
+	--leading-heading-lg: 1.11;
+	--tracking-heading-lg: 0.26px;
+	--text-display: 36px;
+	--leading-display: 1.11;
+	--tracking-display: 0.36px;
 
-  /* Typography — Weights */
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
-  --font-weight-black: 900;
+	/* Typography — Weights */
+	--font-weight-regular: 400;
+	--font-weight-medium: 500;
 
-  /* Spacing */
-  --spacing-unit: 4px;
-  --spacing-4: 4px;
-  --spacing-8: 8px;
-  --spacing-12: 12px;
-  --spacing-16: 16px;
-  --spacing-20: 20px;
-  --spacing-24: 24px;
-  --spacing-28: 28px;
-  --spacing-32: 32px;
-  --spacing-48: 48px;
-  --spacing-64: 64px;
-  --spacing-96: 96px;
-  --spacing-120: 120px;
+	/* Spacing */
+	--spacing-unit: 8px;
+	--spacing-8: 8px;
+	--spacing-16: 16px;
+	--spacing-24: 24px;
+	--spacing-48: 48px;
+	--spacing-80: 80px;
+	--spacing-160: 160px;
 
-  /* Layout */
-  --page-max-width: 1200px;
-  --section-gap: 24px;
-  --card-padding: 16px;
-  --element-gap: 16px;
+	/* Layout */
+	--page-max-width: 1600px;
+	--section-gap: 80px;
+	--card-padding: 8px;
+	--element-gap: 8px;
 
-  /* Border Radius */
-  --radius-sm: 2px;
-  --radius-lg: 8px;
-  --radius-xl: 12px;
-  --radius-2xl: 16px;
-  --radius-2xl-2: 20px;
-  --radius-3xl: 24px;
-  --radius-3xl-2: 32px;
-  --radius-3xl-3: 36px;
-  --radius-3xl-4: 40px;
-  --radius-full: 48px;
-  --radius-full-2: 9999px;
+	/* Border Radius */
+	--radius-sm: 2px;
+	--radius-lg: 8px;
+	--radius-full: 14385.6px;
 
-  /* Named Radii */
-  --radius-cards: 24px;
-  --radius-links: 16px;
-  --radius-images: 8px;
-  --radius-inputs: 8px;
-  --radius-buttons: 9999px;
+	/* Named Radii */
+	--radius-buttons: 4px;
+	--radius-default: 2px;
+	--radius-cardlarge: 8px;
+	--radius-cardsmall: 4px;
 
-  /* Shadows */
-  --shadow-subtle: rgba(0, 0, 0, 0.15) 0px 0px 2px 0px, rgba(0, 0, 0, 0.04) 0px 8px 40px 0px, rgba(0, 0, 0, 0.05) 0px 2px 5px 0px;
-
-  /* Surfaces */
-  --surface-canvas-base: #e5e7eb;
-  --surface-primary-surface: #ffffff;
+	/* Shadows */
+	--shadow-subtle: rgb(229, 229, 229) 0px 0px 0px 0.5px;
+	--shadow-subtle-2: rgb(229, 229, 229) 0px 0.5px 0px 0px;
+	--shadow-sm:
+		rgba(0, 0, 0, 0.02) 0px 13px 8px 0px, rgba(0, 0, 0, 0.03) 0px 6px 6px 0px,
+		rgba(0, 0, 0, 0.04) 0px 1px 3px 0px;
 }
 ```
 
@@ -315,69 +260,55 @@ No distinct primary action color was observed; use the extracted neutral button 
 
 ```css
 @theme {
-  /* Colors */
-  --color-canvas: #e5e7eb;
-  --color-surface: #ffffff;
-  --color-deep-graphite: #222222;
-  --color-text-accent: #717171;
-  --color-rich-black: #000000;
-  --color-goldenrod: #ffdd00;
-  --color-amber-glow: #f7d046;
-  --color-sunset-coral: #d8573f;
-  --color-blush-tone: #f5d5cf;
+	/* Colors */
+	--color-cloud-white: #ffffff;
+	--color-smoke-gray: #f6f6f6;
+	--color-whisper-gray: #eeeeee;
+	--color-light-concrete: #e5e5e5;
+	--color-medium-ash: #858483;
+	--color-charcoal-black: #181818;
+	--color-obsidian: #000000;
+	--color-ignite-orange: #fb631b;
+	--color-sky-blueprint: #0d6ea5;
+	--color-ocean-tint: #6fa2e8;
+	--color-sea-mist: #8fb6cc;
+	--color-success-green: #69be78;
 
-  /* Typography */
-  --font-ui-sans-serif: 'ui-sans-serif', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-circular: 'Circular', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	/* Typography */
+	--font-gerstnerprogramm:
+		'gerstnerProgramm', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		Roboto, sans-serif;
+	--font-ftsystemmono:
+		'ftSystemMono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 
-  /* Typography — Scale */
-  --text-caption: 10px;
-  --leading-caption: 1.5;
-  --tracking-caption: -0.42px;
-  --text-body: 14px;
-  --leading-body: 1.5;
-  --tracking-body: -0.47px;
-  --text-heading-sm: 22px;
-  --leading-heading-sm: 1.2;
-  --tracking-heading-sm: -0.68px;
-  --text-heading: 24px;
-  --leading-heading: 1.2;
-  --tracking-heading: -0.62px;
-  --text-heading-lg: 40px;
-  --leading-heading-lg: 1.2;
-  --tracking-heading-lg: -1.24px;
-  --text-display: 64px;
-  --leading-display: 1;
-  --tracking-display: -1.6px;
+	/* Typography — Scale */
+	--text-caption: 10px;
+	--leading-caption: 1;
+	--text-heading-lg: 26px;
+	--leading-heading-lg: 1.11;
+	--tracking-heading-lg: 0.26px;
+	--text-display: 36px;
+	--leading-display: 1.11;
+	--tracking-display: 0.36px;
 
-  /* Spacing */
-  --spacing-4: 4px;
-  --spacing-8: 8px;
-  --spacing-12: 12px;
-  --spacing-16: 16px;
-  --spacing-20: 20px;
-  --spacing-24: 24px;
-  --spacing-28: 28px;
-  --spacing-32: 32px;
-  --spacing-48: 48px;
-  --spacing-64: 64px;
-  --spacing-96: 96px;
-  --spacing-120: 120px;
+	/* Spacing */
+	--spacing-8: 8px;
+	--spacing-16: 16px;
+	--spacing-24: 24px;
+	--spacing-48: 48px;
+	--spacing-80: 80px;
+	--spacing-160: 160px;
 
-  /* Border Radius */
-  --radius-sm: 2px;
-  --radius-lg: 8px;
-  --radius-xl: 12px;
-  --radius-2xl: 16px;
-  --radius-2xl-2: 20px;
-  --radius-3xl: 24px;
-  --radius-3xl-2: 32px;
-  --radius-3xl-3: 36px;
-  --radius-3xl-4: 40px;
-  --radius-full: 48px;
-  --radius-full-2: 9999px;
+	/* Border Radius */
+	--radius-sm: 2px;
+	--radius-lg: 8px;
+	--radius-full: 14385.6px;
 
-  /* Shadows */
-  --shadow-subtle: rgba(0, 0, 0, 0.15) 0px 0px 2px 0px, rgba(0, 0, 0, 0.04) 0px 8px 40px 0px, rgba(0, 0, 0, 0.05) 0px 2px 5px 0px;
+	/* Shadows */
+	--shadow-subtle: rgb(229, 229, 229) 0px 0px 0px 0.5px;
+	--shadow-subtle-2: rgb(229, 229, 229) 0px 0.5px 0px 0px;
+	--shadow-sm:
+		rgba(0, 0, 0, 0.02) 0px 13px 8px 0px, rgba(0, 0, 0, 0.03) 0px 6px 6px 0px,
+		rgba(0, 0, 0, 0.04) 0px 1px 3px 0px;
 }
 ```
