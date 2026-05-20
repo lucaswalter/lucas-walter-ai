@@ -1,0 +1,18 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "lucas-walter-ai",
+	"main": ".svelte-kit/cloudflare/_worker.js",
+	// Custom domain. The zone must already exist in this Cloudflare account
+	// (nameservers pointed at Cloudflare). custom_domain auto-creates the DNS
+	// record + TLS cert on deploy.
+	"routes": [{ "pattern": "lucaswalter.ai", "custom_domain": true }],
+	"compatibility_date": "2025-05-08",
+	"compatibility_flags": ["nodejs_als"],
+	"assets": {
+		"binding": "ASSETS",
+		"directory": ".svelte-kit/cloudflare"
+	},
+	"observability": {
+		"enabled": true
+	}
+}
