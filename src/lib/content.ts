@@ -46,7 +46,7 @@ export const links: Link[] = [
 		title: 'The 6-Figure AI Side Biz 📈',
 		description: 'Build a local newsletter business powered by AI agents that runs itself.',
 		cta: 'Start building',
-		url: 'https://www.skool.com/ai-automation-mastery-group/classroom/618956da?md=b20fc0f3d1984362a75ead635e4f0c96',
+		url: 'https://lucaswalter.ai/zero-person-local-newsletter-course/',
 		primary: true
 	},
 	{
