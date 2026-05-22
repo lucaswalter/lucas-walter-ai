@@ -9,7 +9,8 @@ export const meta = {
 export const profile = {
 	name: 'Lucas Walter',
 	bio: [
-		"Hi 👋 I'm Lucas. I build AI agents & n8n automations that run real businesses, including CoinLedger (800k users), Klint AI, and Spokane Pulse.",
+		"Hi 👋 I'm Lucas.",
+		'I build AI agents & n8n automations that run real businesses, including CoinLedger (800k users), Klint AI, and Spokane Pulse.',
 		'Follow along on socials, join 28k+ builders in my free community, or grab the courses below.'
 	],
 	avatar: '/lucas_walter_profile.png'
