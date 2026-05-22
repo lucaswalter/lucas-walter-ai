@@ -23,15 +23,15 @@ export type Social = {
 };
 
 export const socials: Social[] = [
-	{ platform: 'instagram', label: 'lucas.walter.ai', url: 'https://instagram.com/lucas.walter.ai' },
-	{ platform: 'tiktok', label: '@lucas.walter.ai', url: 'https://www.tiktok.com/@lucas.walter.ai' },
 	{ platform: 'youtube', label: '@lucaswalterai', url: 'https://www.youtube.com/@lucaswalterai' },
+	{ platform: 'x', label: '@lucas_fabric', url: 'https://x.com/lucas_fabric' },
 	{
 		platform: 'linkedin',
 		label: 'lucas-walter',
 		url: 'https://www.linkedin.com/in/lucas-walter-339ba83b0/'
 	},
-	{ platform: 'x', label: '@lucas_fabric', url: 'https://x.com/lucas_fabric' }
+	{ platform: 'instagram', label: 'lucas.walter.ai', url: 'https://instagram.com/lucas.walter.ai' },
+	{ platform: 'tiktok', label: '@lucas.walter.ai', url: 'https://www.tiktok.com/@lucas.walter.ai' }
 ];
 
 export type Link = {
