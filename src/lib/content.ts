@@ -43,7 +43,7 @@ export type Link = {
 
 export const links: Link[] = [
 	{
-		title: 'The $100k+ AI Side Biz 📈',
+		title: 'The $100k AI Side Business 📈',
 		description: 'Build a local newsletter business powered by AI agents that runs itself.',
 		cta: 'Start building',
 		url: 'https://lucaswalter.ai/100k-ai-side-business/',
